@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site":"trym",
     "public": "build",
     "ignore": [
       "firebase.json",
