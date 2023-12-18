@@ -19,8 +19,6 @@ function Profile({ user }) {
     "Pranav Ivaturi",
     "Aakash  Mutum",
     "Parth Rajesh Nikam",
-    "Utkarsh Arora",
-    "Samyak Kumar Singh",
     "Abhay Bharath",
     "Sidhant Tara",
     "Karitk Prashant Yeole",
