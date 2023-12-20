@@ -1,8 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-
-// @mui/material Components
-import Chip from "@mui/material/Chip";
+import React from "react";
 
 // List Components
 import List from "@mui/material/List";
@@ -19,7 +15,6 @@ import HeaderNav from "pages/HeaderNav";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // function components

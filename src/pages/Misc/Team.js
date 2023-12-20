@@ -1,27 +1,12 @@
 import React from "react";
-import { List, ListItem, ListItemText } from "@material-ui/core";
-
-// import SwipeableSideBar from "pages/HomePage/Menu";
-
-import theme from "assets/theme";
-import colors from "assets/theme/base/colors";
-import Container from "@mui/material/Container";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
-import Grid from "@mui/material/Grid";
-import Avatar from "@mui/material/Avatar";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import PrimaryColumn from "components/PrimaryColumn/PrimaryColumn";
-import rgba from "assets/theme/functions/rgba";
 import HeaderNav from "pages/HeaderNav";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import socialMediaColors from "assets/theme/base/colors";
 
 import parthimage from "assets/images/pnikam.jpg";
 
@@ -66,10 +51,15 @@ const Team = () => {
             boxShadow: ({ boxShadows: { xxl } }) => xxl,
           }}
         >
+          <MKTypography variant="h2" my={2} mx={2}>
+            Our Team
+          </MKTypography>
+
           <MKBox
             minHeight="45vh"
             sx={{
               mx: -2,
+              my:4,
               backgroundImage: `url(${parthimage})`,
               backgroundSize: "cover",
               backgroundPosition: "top",
@@ -78,14 +68,11 @@ const Team = () => {
               borderRadius: 10,
             }}
           />
-          <MKTypography variant="h2" my={4} mx={2}>
-            Our Team
-          </MKTypography>
 
           <MKTypography
             sx={{ fontFamily: "Consolas" }}
             gutterBottom
-            variant="h5"
+            variant="h4"
             component="div"
           >
             Parth Nikam{" "}
@@ -127,10 +114,10 @@ const Team = () => {
             </MKBox>
           </MKTypography>
           <MKTypography
-            sx={{ fontFamily: '"Consolas"' }}
+            sx={{ my:2, fontFamily: '"Consolas"' }}
             variant="subtitle1"
             component="div"
-            fontWeight="medium"
+            fontWeight="bold"
           >
             - Founder TRYM, TopKarega
           </MKTypography>

@@ -6,7 +6,6 @@ import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import HomeIcon from "@mui/icons-material/Home";
 import InsightsIcon from "@mui/icons-material/Insights";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SearchIcon from "@material-ui/icons/Search";
 
 // Core Components
@@ -21,7 +20,6 @@ export default function FooterNav() {
   const navigate = useNavigate(); 
   const location = useLocation(); 
   const footerRef = useRef(null); 
-  const [prevScrollPos, setPrevScrollPos] = useState(0); // State to track previous scroll position
 
   useEffect(() => {
     // Highlight the search bar when on the homepage

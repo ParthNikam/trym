@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import MKBox from "components/MKBox";
-import Grid from "@material-ui/core/Grid";
 import MKTypography from "components/MKTypography";
-import Divider from "@mui/material/Divider";
 
 import Card from "@mui/material/Card";
 import { useTheme } from "@material-ui/core/styles";
@@ -261,7 +259,6 @@ const Graphs = ({ marks }) => {
           mb: 4,
           mx: -2,
           borderRadius: 3,
-          background: "transparent",
           background:"rgba(250,250,250,0.5)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}

@@ -1,8 +1,6 @@
 import React from "react";
 
 // @mui material components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
 import Menu from "./Menu";
@@ -10,9 +8,6 @@ import Menu from "./Menu";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKAvatar from "components/MKAvatar";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
-import MenuIcon from "@mui/icons-material/Menu";
 import favicon from "assets/images/logo192.png";
 
 const HeaderNav = () => {
@@ -32,7 +27,7 @@ const HeaderNav = () => {
         <MKBox p={0} display="flex" justifyContent="space-between">
           <MKBox component="a" href="/" sx={{borderRadius:10}}>
             <MKAvatar
-              sx={{ width: 40, height: 40 }}
+              sx={{ width: 35, height: 35 }}
               alt="trym logo"
               src={favicon}
             />

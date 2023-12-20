@@ -1,11 +1,9 @@
 import React from "react";
-import { List, ListItem, ListItemText } from "@material-ui/core";
 
 
 
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import PrimaryColumn from "components/PrimaryColumn/PrimaryColumn";
 import HeaderNav from "pages/HeaderNav";
@@ -57,7 +55,7 @@ const AboutUs = () => {
           </MKTypography>
 
               <MKTypography sx={{fontFamily:"Consolas"}} variant="h5" component="div" gutterBottom>
-                Welcome to TRYM by Parth Nikam
+                Welcome to TRYM by Parth Nikam.
               </MKTypography>
               <MKTypography sx={{fontFamily:"Consolas"}} variant="body1" paragraph>
                 Hi there! I'm Parth Nikam, the founder of TopKarega, and I'm

@@ -9,7 +9,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from '@mui/icons-material/Home';
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 // import TrymIcon from "assets/images/logos/favicon-32x32.png";
 import GroupsIcon from '@mui/icons-material/Groups';
@@ -24,7 +23,6 @@ const SwipeableSideBar = () => {
     top: false,
     right: false,
     bottom: false,
-    right: false,
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -92,7 +90,7 @@ const SwipeableSideBar = () => {
       <React.Fragment key={"right"}>
         <IconButton
           onClick={toggleDrawer("right", true)}
-          sx={{ p: "10px" }}
+          sx={{ p: 0 }}
           aria-label="menu"
         >
           <MenuIcon sx={{width:25, height:25, color:"#000000"}} />

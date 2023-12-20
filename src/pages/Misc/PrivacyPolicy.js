@@ -2,7 +2,6 @@ import React from "react";
 
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import PrimaryColumn from "components/PrimaryColumn/PrimaryColumn";
 import HeaderNav from "pages/HeaderNav";
@@ -93,7 +92,7 @@ const AboutUs = () => {
             personal friends of Parth Nikam. Don't feel sad if you're not a
             verified user. Thats just cause you're not friends with Parth Nikam.
           </MKTypography>
-          <MKTypography variant="body1">
+          <MKTypography variant="body1" paragraph sx={{ fontFamily: '"Consolas"' }}>
             7. <strong>Data Analytics Platform:</strong> TRYM is a data
             analytics platform. We do not create any of the data displayed on
             the platform; our goal is to provide users with insights into their
