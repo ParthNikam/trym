@@ -21,6 +21,7 @@ function Profile({ user }) {
     "Parth Rajesh Nikam",
     "Abhay Bharath",
     "Sidhant Tara",
+    "Ishan Murali",
     "Karitk Prashant Yeole",
     "Mahi Sureka"
   ];

@@ -30,6 +30,19 @@ const LeaderBoardPageRoot = () => {
       userB.marks[userB.marks.length - 1].rank
   );
 
+  function formatDate(dateString) {
+    if (dateString != null) {
+      const options = { day: "numeric", month: "short", year:"numeric" };
+      return new Date(dateString).toLocaleDateString("en-US", options);
+    } else {
+      return null;
+    }
+  }
+
+  const formattedDate = formatDate(leaderBoard[0]
+    ? leaderBoard[0].marks[leaderBoard[0].marks.length - 1].date
+    : null);
+
   if (leaderBoard === undefined) {
     return <div>Loading...</div>;
   }
@@ -89,7 +102,9 @@ const LeaderBoardPageRoot = () => {
             <MKTypography variant="h2" my={4} mx={2}>
               Leader Board
             </MKTypography>
-
+            <MKTypography variant="h5" my={4} mx={2}>
+              Date: {formattedDate}
+            </MKTypography>
             <List>
               {leaderBoard.map((user, index) => (
                 <ListItem

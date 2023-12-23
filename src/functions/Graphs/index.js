@@ -113,9 +113,8 @@ const Graphs = ({ marks }) => {
   if (!marks) {
     // Handle the case when marks is undefined
     return (
-      <MKTypography variant="body2" color="error">
-        FUXXKED UPP!
-      </MKTypography>
+      <div>
+      </div>
     );
   }
 

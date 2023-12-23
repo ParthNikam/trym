@@ -7,6 +7,7 @@ import thunk from "redux-thunk";
 import reducers from "./redux/reducers";
 import App from "./App";
 
+import * as serviceWorker from './serviceWorker';
 
 
 // Import the functions you need from the SDKs you need
@@ -42,3 +43,5 @@ root.render(
     <App />
   </Provider>
 );
+
+serviceWorker.register();

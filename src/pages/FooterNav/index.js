@@ -34,7 +34,7 @@ export default function FooterNav() {
     setValue(newValue);
 
     // Navigate to the corresponding page based on the selected value
-    if (newValue === 1 && location.pathname !== '/') {
+    if (newValue === 1 && location.pathname !== '/' && location.pathname !== '/home') {
       // Toggle the SearchBar visibility
       setIsSearchOpen((prev) => !prev);
     } else {
