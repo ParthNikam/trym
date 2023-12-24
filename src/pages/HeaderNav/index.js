@@ -25,7 +25,7 @@ const HeaderNav = () => {
         }}
       >
         <MKBox p={0} display="flex" justifyContent="space-between">
-          <MKBox component="a" href="/" sx={{borderRadius:10}}>
+          <MKBox component="a" href="/home" sx={{borderRadius:10}}>
             <MKAvatar
               sx={{ width: 35, height: 35 }}
               alt="trym logo"

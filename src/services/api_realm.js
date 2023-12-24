@@ -28,6 +28,7 @@ const realmApiService = {
       return null;
     }
   },
+  
   fetchUserById: async (query) => {
     const app = new Realm.App({ id: REACT_APP_REALM_APP_ID });
     const credentials = Realm.Credentials.anonymous();
@@ -40,6 +41,19 @@ const realmApiService = {
       return null;
     }
   },
+
+  updateViews: async (query) => {
+    const app = new Realm.App({ id: REACT_APP_REALM_APP_ID });
+    const credentials = Realm.Credentials.anonymous();
+    try {
+      const user = await app.logIn(credentials);
+      const userViews = await user.functions.updateViews(query);
+      return userViews;
+    } catch (err) {
+      console.error("Failed to log in", err);
+      return null;
+    }
+  }
 };
 
 export default realmApiService;

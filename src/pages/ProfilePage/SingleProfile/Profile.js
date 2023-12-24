@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 // @mui/material Components
 import VerifiedIcon from "@mui/icons-material/Verified";
@@ -10,6 +10,9 @@ import UserBadges from "./Badges";
 import MKBox from "components/MKBox";
 import MKAvatar from "components/MKAvatar";
 import MKTypography from "components/MKTypography";
+import { updateViews } from "redux/actions/UserActions";
+
+
 
 function Profile({ user }) {
   const verifiedUsersList = [
@@ -23,7 +26,7 @@ function Profile({ user }) {
     "Sidhant Tara",
     "Ishan Murali",
     "Karitk Prashant Yeole",
-    "Mahi Sureka"
+    "Mahi Sureka",
   ];
   const isUserVerified = verifiedUsersList.includes(user.name);
 
@@ -35,9 +38,9 @@ function Profile({ user }) {
     }
   };
 
-  const convertBase64ToImage = (base64String) => {
-    return `data:image/png;base64,${base64String}`;
-  };
+  const convertBase64ToImage = (base64String) => {return `data:image/png;base64,${base64String}`;};
+
+
   return (
     <MKBox component="section" py={{ xs: 6, sm: 12 }}>
       <MKBox
@@ -80,13 +83,8 @@ function Profile({ user }) {
       </MKBox>
 
       <MKBox
-        ml={{
-          xs: 5,
-          md: 5,
-        }}
-        mt={{
-          xs: 5,
-        }}
+        ml={{xs: 5,md: 5,}}
+        mt={{xs: 5,}}
         pt={{ xs: 2, sm: 4 }}
         textAlign="center"
       >
@@ -111,6 +109,7 @@ function Profile({ user }) {
           alignItems="center"
         >
           <MKTypography variant="subtitle2">@{user.class}</MKTypography>
+          {/* <MKTypography variant="subtitle2">{views} views</MKTypography> */}
         </MKBox>
       </MKBox>
     </MKBox>

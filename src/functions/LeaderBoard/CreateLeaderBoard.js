@@ -68,8 +68,6 @@ export default async function CreateLeaderBoard() {
 
     // Save the toppers to IndexedDB
     await saveToppersToIndexedDB(toppers);
-
-    console.log("Topper data saved to IndexedDB");
   } catch (error) {
     console.error("Error creating leaderboard:", error);
   }

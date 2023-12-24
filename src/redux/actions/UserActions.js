@@ -40,38 +40,14 @@ export const fetchUserById = (userId) => async (dispatch) => {
 };
 
 
-// const api = require('../../services/api_realm'); // Realm Api Service
+export const updateViews = (name) => async (dispatch) => {
+  try {
+    const data = await api.updateViews(name);
+    dispatch({ type: "FETCH_ALL", payload: data });
+    return data; // user.views
+  } catch (error) {
+    console.log(error.message);
+    return null;
+  }
+};
 
-// // Action creators
-// exports.fetchAllUsers = () => async (dispatch) => {
-//   try {
-//     const data = await api.fetchAllUsers('');
-//     dispatch({ type: 'FETCH_ALL', payload: data });
-//     return data;
-//   } catch (error) {
-//     console.log(error.message);
-//     return null;
-//   }
-// };
-
-// exports.fetchUserByName = (name) => async (dispatch) => {
-//   try {
-//     const data = await api.fetchUserByName(name);
-//     dispatch({ type: 'FETCH_ALL', payload: data });
-//     return data;
-//   } catch (error) {
-//     console.log(error.message);
-//     return null;
-//   }
-// };
-
-// exports.fetchUserById = (userId) => async (dispatch) => {
-//   try {
-//     const data = await api.fetchUserById(userId);
-//     dispatch({ type: 'FETCH_ALL', payload: data });
-//     return data;
-//   } catch (error) {
-//     console.log(error.message);
-//     return null;
-//   }
-// };

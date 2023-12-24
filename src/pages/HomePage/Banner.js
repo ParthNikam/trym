@@ -14,7 +14,7 @@ const Banner = ({ Text, Subtitle }) => {
         sx={{
           p: 0,
           mx: { xs: 1, lg: 3 },
-          mb: 4,
+          my: 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) =>
             rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",

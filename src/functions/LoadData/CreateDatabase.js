@@ -23,7 +23,7 @@ export default function CreateDatabase() {
             newExpiryDate.setHours(newExpiryDate.getHours() + 2);
             setCookie("dataExpiryDate", newExpiryDate, { path: "/" });
 
-            console.log("Bro, got data and refreshed: ", userData);
+            console.log("Bro, got data and refreshed: ");
           } catch (error) {
             console.error("Error fetching or saving user data:", error);
           }
@@ -40,7 +40,7 @@ export default function CreateDatabase() {
           const userData = await dispatch(fetchAllUsers());
           saveUserDataToIndexedDB(userData);
 
-          console.log("Bro, got data and set expiry: ", userData);
+          console.log("Bro, got data and set expiry: ");
         } catch (error) {
           console.error("Error fetching or saving user data:", error);
         }

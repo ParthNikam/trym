@@ -44,7 +44,7 @@ export default function FooterNav() {
       // Navigate to the corresponding page based on the selected value
       switch (newValue) {
         case 0:
-          navigate("/");
+          navigate("/home");
           break;
         case 2:
           navigate("/leader-board");

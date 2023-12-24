@@ -1,7 +1,8 @@
 // App.js
 
 // React compoents
-import React from "react";
+import { useEffect } from "react";
+import { useNavigate, Navigate } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // @mui material components
@@ -15,7 +16,6 @@ import theme from "assets/theme";
 import HomePage from "pages/HomePage";
 import ProfilePage from "pages/ProfilePage";
 import LeaderBoardPage from "pages/LeaderBoardPage";
-// import CreateDatabase from "functions/LoadDataNew";
 import CreateDatabase from "functions/LoadData/CreateDatabase";
 import CreateLeaderBoard from "functions/LeaderBoard/CreateLeaderBoard";
 import FooterNav from "pages/FooterNav";
@@ -33,7 +33,11 @@ export default function App() {
       <CssBaseline />
       <Router>
         <Routes>
-          <Route exact path="*" element={<HomePage />} />
+          {/* Just to avoid additional fuckups on deploying something new */}
+          <Route path="*" element={<Navigate to="/home" replace />}/>
+
+          <Route path="/home" element={<HomePage />} />
+          <Route exact path="/home" element={<HomePage />} />
           <Route exact path="/profile/" element={<ProfilePage />} />
           <Route exact path="/leader-board/" element={<LeaderBoardPage />} />
           <Route exact path="/about-us" element={<AboutUs />} />
