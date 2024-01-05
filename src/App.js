@@ -25,8 +25,16 @@ import Team from "pages/Misc/Team";
 import PrivacyPolicy from "pages/Misc/PrivacyPolicy";
 
 export default function App() {
-  CreateDatabase();
-  CreateLeaderBoard();
+  const initializeData = async () => {
+    await CreateDatabase();
+    await CreateLeaderBoard();
+  };
+
+  // Call the initialization function when the component mounts
+  useEffect(() => {
+    initializeData();
+  }, []);
+
 
   return (
     <ThemeProvider theme={theme}>

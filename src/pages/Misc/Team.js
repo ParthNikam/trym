@@ -132,16 +132,14 @@ const Team = () => {
           <MKTypography
             sx={{fontFamily:"Consolas"}} variant="body1" paragraph
           >
-            In the coming time, I'm going to add a ton of cool features to TRYM,
-            including - surprise surprise AI babby! Yeah, nothing is fun without
-            AI these days.
+            In the coming time, I'm going to add a ton of cool features to TRYM with a killer dashboard for checking out your graphs—think sleek and super easy to use. But wait, there's more! Brace yourself for some AI action, including cool stuff like clustering and performance markers. Yep, you heard it right—AI is crashing the party! Because, hey, what's tech without a bit of AI magic, right? Get ready for a laid-back yet turbocharged TRYM experience! 🚀✨
           </MKTypography>
 
           <MKTypography
            sx={{fontFamily:"Consolas"}} variant="body1" paragraph
           >
             If you're interesting in talking about progarmming or business or
-            even philosophy, hit me up in J10.
+            even philosophy, hit me up in J10 or LinkedIn.
           </MKTypography>
         </Card>
       </MKBox>

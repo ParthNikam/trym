@@ -37,6 +37,7 @@
     "realm-web": "^2.0.0",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
+    "sitemap": "^7.1.1",
     "universal-cookie": "^6.1.1",
     "web-vitals": "^3.5.0"
   },
